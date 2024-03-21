@@ -14,51 +14,51 @@
   box-sizing: border-box;
 }
 
+.content {
+  width: 857px;
+  margin: 0 auto;
+}
+
 /* Header */
-header {
+header .menu {
   display: flex;
   justify-content: flex-end;
-  height: 50px;
   gap: 20px;
 }
 
-header div {
+header .menu div {
   margin-top: 27px;
-  margin-left: 856px;
 }
 
 /* Nav */
 nav {
   display: flex;
-  padding: 0 148px;
   color: var(--black-color);
-}
-
-nav .part1 {
-  margin-top: 178px;
+  justify-content: space-between;
+  padding: 140px 0 71px 0;
 }
 
 nav .part1 .Introduce {
   font-size: 44px;
   font-weight: bold;
-  width: 506px;
-  height: 105px;
+  white-space: nowrap;
 }
 
 nav .part1 .Describe {
   font-size: 16px;
   margin-top: 40px;
-  width: 497px;
-  height: 66px;
+  margin-right: 116px;
 }
 
 nav .part1 .Download {
   font-size: 20px;
   background-color: var(--red-color);
-  padding: 9px 21px 17px 20px;
   height: 47px;
   width: 208px;
   margin-top: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 nav .part1 .Download a {
@@ -70,7 +70,7 @@ nav .part2 img {
   width: 243px;
   height: 243px;
   border-radius: 50%;
-  margin: 160px 148px 0 108px;
+  margin: 0px;
 }
 
 /* Main */
@@ -83,7 +83,8 @@ main .RecentPosts {
 
 main .RecentPosts .top {
   display: flex;
-  height: 69px;
+  height: 60px;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -95,8 +96,6 @@ main .RecentPosts .top .theme {
 main .RecentPosts .top .view {
   font-size: 16px;
   color: var(--blue-color);
-  width: 20px;
-  margin-left: 519px;
 }
 
 main .RecentPosts .postbox {
@@ -107,11 +106,20 @@ main .RecentPosts .postleft {
   background-color: #ffffff;
   width: 418px;
   height: 265px;
+  padding: 24px;
 }
 
 main .RecentPosts .postleft .topic {
   font-size: 26px;
   font-weight: bold;
+}
+
+main .RecentPosts .postleft .date {
+  margin-top: 11px;
+}
+
+main .RecentPosts .postleft .content {
+  margin-top: 11px;
 }
 
 main .RecentPosts .postright {
