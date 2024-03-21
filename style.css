@@ -1,0 +1,120 @@
+:root {
+  /* color */
+  --black-color: #21243d;
+  --mint-color: #edf7fa;
+  --red-color: #ff6464;
+  --blue-color: #00a8cc;
+  --vavy-color: #142850;
+  --grey-light-color: #8695a4;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: flex-end;
+  height: 50px;
+  gap: 20px;
+}
+
+header div {
+  margin-top: 27px;
+  margin-left: 856px;
+}
+
+/* Nav */
+nav {
+  display: flex;
+  padding: 0 148px;
+  color: var(--black-color);
+}
+
+nav .part1 {
+  margin-top: 178px;
+}
+
+nav .part1 .Introduce {
+  font-size: 44px;
+  font-weight: bold;
+  width: 506px;
+  height: 105px;
+}
+
+nav .part1 .Describe {
+  font-size: 16px;
+  margin-top: 40px;
+  width: 497px;
+  height: 66px;
+}
+
+nav .part1 .Download {
+  font-size: 20px;
+  background-color: var(--red-color);
+  padding: 9px 21px 17px 20px;
+  height: 47px;
+  width: 208px;
+  margin-top: 38px;
+}
+
+nav .part1 .Download a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+nav .part2 img {
+  width: 243px;
+  height: 243px;
+  border-radius: 50%;
+  margin: 160px 148px 0 108px;
+}
+
+/* Main */
+main .RecentPosts {
+  background-color: var(--mint-color);
+  height: 396px;
+  padding: 0 146px 0 150px;
+  margin-top: 71px;
+}
+
+main .RecentPosts .top {
+  display: flex;
+  height: 69px;
+  align-items: center;
+}
+
+main .RecentPosts .top .theme {
+  font-size: 22px;
+  width: 219px;
+}
+
+main .RecentPosts .top .view {
+  font-size: 16px;
+  color: var(--blue-color);
+  width: 20px;
+  margin-left: 519px;
+}
+
+main .RecentPosts .postbox {
+  display: flex;
+}
+
+main .RecentPosts .postleft {
+  background-color: #ffffff;
+  width: 418px;
+  height: 265px;
+}
+
+main .RecentPosts .postleft .topic {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+main .RecentPosts .postright {
+  background-color: #ffffff;
+  margin-left: 20px;
+}
