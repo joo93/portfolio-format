@@ -6,6 +6,7 @@
   --blue-color: #00a8cc;
   --vavy-color: #142850;
   --grey-light-color: #8695a4;
+  --grey-morelight-color: #e0e0e0;
 }
 
 * {
@@ -33,7 +34,7 @@ header .menu div {
 /* Nav */
 nav {
   display: flex;
-  color: var(--black-color);
+  color: var(--vavy-color);
   justify-content: space-between;
   padding: 140px 0 71px 0;
 }
@@ -78,7 +79,8 @@ main .RecentPosts {
   background-color: var(--mint-color);
   height: 396px;
   padding: 0 146px 0 150px;
-  margin-top: 71px;
+  display: flex;
+  color: var(--vavy-color);
 }
 
 main .RecentPosts .top {
@@ -100,6 +102,7 @@ main .RecentPosts .top .view {
 
 main .RecentPosts .postbox {
   display: flex;
+  width: 857px;
 }
 
 main .RecentPosts .postleft {
@@ -107,6 +110,8 @@ main .RecentPosts .postleft {
   width: 418px;
   height: 265px;
   padding: 24px;
+  border-radius: 4px;
+  margin-left: 0;
 }
 
 main .RecentPosts .postleft .topic {
@@ -114,15 +119,227 @@ main .RecentPosts .postleft .topic {
   font-weight: bold;
 }
 
-main .RecentPosts .postleft .date {
-  margin-top: 11px;
+main .RecentPosts .postleft .medium {
+  display: flex;
+  gap: 26px;
+  margin-top: 30px;
 }
 
 main .RecentPosts .postleft .content {
-  margin-top: 11px;
+  width: 368px;
+  margin-top: 30px;
 }
 
 main .RecentPosts .postright {
   background-color: #ffffff;
+  width: 418px;
+  height: 265px;
+  padding: 24px;
+  border-radius: 4px;
   margin-left: 20px;
+}
+
+main .RecentPosts .postright .topic {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+main .RecentPosts .postright .medium {
+  display: flex;
+  gap: 26px;
+  margin-top: 30px;
+}
+
+main .RecentPosts .postright .content {
+  width: 368px;
+  margin-top: 30px;
+}
+
+section .FeaturedWorks {
+  margin-top: 15px;
+  font-size: 22px;
+  margin-left: 0;
+  color: var(--vavy-color);
+}
+
+section .FeaturedWorks .firstpost {
+  margin-top: 15px;
+  display: flex;
+  border-style: none none solid none;
+  border-color: var(--grey-morelight-color);
+  padding-bottom: 15px;
+}
+
+section .FeaturedWorks .firstpost img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+section .FeaturedWorks .firstpost .article {
+  margin-left: 18px;
+  align-items: center;
+}
+
+section .FeaturedWorks .firstpost .topic {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+section .FeaturedWorks .firstpost .medium {
+  display: flex;
+  margin-top: 30px;
+}
+
+section .FeaturedWorks .firstpost .year {
+  background-color: var(--vavy-color);
+  color: #ffffff;
+  font-size: 18px;
+  width: 62px;
+  height: 25px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+}
+
+section .FeaturedWorks .firstpost .style {
+  margin-left: 26px;
+  font-size: 20px;
+  color: var(--grey-light-color);
+}
+
+section .FeaturedWorks .firstpost .details {
+  margin-top: 30px;
+  font-size: 16px;
+  width: 594px;
+}
+
+section .FeaturedWorks .mediumpost {
+  display: flex;
+  margin-top: 30px;
+  border-style: none none solid none;
+  border-color: var(--grey-morelight-color);
+  padding-bottom: 15px;
+}
+
+section .FeaturedWorks .mediumpost img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+section .FeaturedWorks .mediumpost .article {
+  margin-left: 18px;
+  align-items: center;
+}
+
+section .FeaturedWorks .mediumpost .topic {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+section .FeaturedWorks .mediumpost .medium {
+  display: flex;
+  margin-top: 30px;
+}
+
+section .FeaturedWorks .mediumpost .year {
+  background-color: var(--vavy-color);
+  color: #ffffff;
+  font-size: 18px;
+  width: 62px;
+  height: 25px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+}
+
+section .FeaturedWorks .mediumpost .style {
+  margin-left: 26px;
+  font-size: 20px;
+  color: var(--grey-light-color);
+}
+
+section .FeaturedWorks .mediumpost .details {
+  margin-top: 30px;
+  font-size: 16px;
+  width: 594px;
+}
+
+section .FeaturedWorks .lastpost {
+  display: flex;
+  margin-top: 30px;
+  border-style: none none solid none;
+  border-color: var(--grey-morelight-color);
+  padding-bottom: 15px;
+}
+
+section .FeaturedWorks .lastpost img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+section .FeaturedWorks .lastpost .article {
+  margin-left: 18px;
+  align-items: center;
+}
+
+section .FeaturedWorks .lastpost .topic {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+section .FeaturedWorks .lastpost .medium {
+  display: flex;
+  margin-top: 30px;
+}
+
+section .FeaturedWorks .lastpost .year {
+  background-color: var(--vavy-color);
+  color: #ffffff;
+  font-size: 18px;
+  width: 62px;
+  height: 25px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+}
+
+section .FeaturedWorks .lastpost .style {
+  margin-left: 26px;
+  font-size: 20px;
+  color: var(--grey-light-color);
+}
+
+section .FeaturedWorks .lastpost .details {
+  margin-top: 30px;
+  font-size: 16px;
+  width: 594px;
+}
+
+/* Footer */
+footer {
+  margin-top: 83px;
+  margin-bottom: 54px;
+}
+
+footer .icons {
+  display: flex;
+  gap: 35px;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .copyright {
+  margin-top: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
