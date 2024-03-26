@@ -75,12 +75,17 @@ nav .part2 img {
 }
 
 /* Main */
+main {
+  display: block;
+  min-width: 857px;
+}
+
 main .RecentPosts {
   background-color: var(--mint-color);
   height: 396px;
-  padding: 0 146px 0 150px;
   display: flex;
   color: var(--vavy-color);
+  width: 100%;
 }
 
 main .RecentPosts .top {
