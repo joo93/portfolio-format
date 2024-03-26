@@ -183,7 +183,6 @@ section .FeaturedWorks .firstpost img {
 
 section .FeaturedWorks .firstpost .article {
   margin-left: 18px;
-  align-items: center;
 }
 
 section .FeaturedWorks .firstpost .topic {
@@ -347,4 +346,134 @@ footer .copyright {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (max-width: 480px) {
+  header .menu {
+    display: none;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  nav .part1 {
+    order: 2;
+  }
+
+  nav .part2 {
+    order: 1;
+  }
+
+  nav .Profile {
+    display: flex;
+    justify-content: center;
+  }
+
+  nav .part1 .Introduce {
+    text-align: center;
+    margin-top: 32px;
+  }
+
+  nav .part1 .Describe {
+    text-align: center;
+    margin: 0 20%;
+    margin-top: 21px;
+  }
+
+  nav .part1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  nav .part1 .Download {
+    margin: 0 auto;
+    margin-top: 27px;
+  }
+
+  .RecentPosts .view {
+    display: none;
+  }
+
+  .RecentPosts .theme {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  main .RecentPosts {
+    height: 647px;
+  }
+
+  main .RecentPosts .postbox {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main .RecentPosts .postleft {
+    padding: 0;
+    width: 80%;
+  }
+
+  main .RecentPosts .postleft .topic {
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  main .RecentPosts .postleft .medium {
+    display: flex;
+    justify-content: center;
+  }
+
+  main .RecentPosts .postleft .content {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+  }
+
+  main .RecentPosts .postright {
+    padding: 0;
+    width: 80%;
+    margin: 0;
+    margin-top: 17px;
+  }
+
+  main .RecentPosts .postright .topic {
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  main .RecentPosts .postright .medium {
+    display: flex;
+    justify-content: center;
+  }
+
+  main .RecentPosts .postright .content {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+  }
+
+  section .FeaturedWorks .mediumpost {
+    display: none;
+  }
+
+  section .FeaturedWorks .lastpost {
+    display: none;
+  }
+
+  section .FeaturedWorks .firstpost {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  section .FeaturedWorks .top {
+    text-align: center;
+    padding: 20px 20px 0 20px;
+  }
+
+  section .FeaturedWorks .firstpost .img {
+    padding: 0 20px;
+  }
 }
