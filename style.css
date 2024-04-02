@@ -26,7 +26,7 @@ header .menu {
   display: flex;
   justify-content: flex-end;
   gap: 20px;
-  padding: 30px 0 80px 0;
+  padding: 30px 0 140px 0;
 }
 
 header .menu .icon {
@@ -44,18 +44,17 @@ nav {
 nav .part1 .Introduce {
   font-size: 44px;
   font-weight: bold;
-  white-space: nowrap;
 }
 
 nav .part1 .Describe {
   font-size: 16px;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 nav .part1 .Download {
   font-size: 20px;
   background-color: var(--red-color);
-  margin-top: 38px;
+  margin-top: 40px;
   display: inline-block;
   padding: 13px;
 }
@@ -65,97 +64,101 @@ nav .part1 .Download a {
   color: #ffffff;
 }
 
-nav .part2 .Profile {
+nav .part2 {
   width: 100%;
   height: 100%;
+  padding: 0 0 100px 20px;
 }
 
 nav .part2 img {
   border-radius: 50%;
-  width: 243px;
-  height: 243px;
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
 }
 
 /* Main */
-main .RecentPosts {
-  background-color: var(--mint-color);
+.RecentPosts {
   color: var(--vavy-color);
+  margin-top: 20px;
+  background-color: var(--mint-color);
+  background-clip: border-box;
 }
 
-main .RecentPosts .top {
+.RecentPosts .top {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 0;
 }
 
-main .RecentPosts .top .theme {
+.RecentPosts .top .theme {
   font-size: 22px;
 }
 
-main .RecentPosts .top .view {
+.RecentPosts .top .view {
   font-size: 16px;
   color: var(--blue-color);
 }
 
-main .RecentPosts .postbox {
+.RecentPosts .postbox {
   display: flex;
   gap: 20px;
   padding-bottom: 20px;
 }
 
-main .RecentPosts .postleft {
+.RecentPosts .postleft {
   background-color: #ffffff;
   border-radius: 4px;
   padding: 24px;
 }
 
-main .RecentPosts .postleft .topic {
+.RecentPosts .postleft .topic {
   font-size: 26px;
   font-weight: bold;
 }
 
-main .RecentPosts .postleft .medium {
+.RecentPosts .postleft .medium {
   display: flex;
   gap: 26px;
   margin-top: 30px;
 }
 
-main .RecentPosts .postleft .details {
+.RecentPosts .postleft .details {
   margin-top: 30px;
 }
 
-main .RecentPosts .postright {
+.RecentPosts .postright {
   background-color: #ffffff;
   padding: 24px;
   border-radius: 4px;
 }
 
-main .RecentPosts .postright .topic {
+.RecentPosts .postright .topic {
   font-size: 26px;
   font-weight: bold;
 }
 
-main .RecentPosts .postright .medium {
+.RecentPosts .postright .medium {
   display: flex;
   gap: 26px;
   margin-top: 30px;
 }
 
-main .RecentPosts .postright .details {
+.RecentPosts .postright .details {
   margin-top: 30px;
 }
 
-main .FeaturedWorks {
+.FeaturedWorks {
   color: var(--vavy-color);
 }
 
-main .FeaturedWorks .top {
+.FeaturedWorks .top {
   font-size: 22px;
   padding: 20px 0;
 }
 
-main .FeaturedWorks .firstpost {
+.FeaturedWorks .firstpost {
   margin-top: 16px;
   display: flex;
   border-bottom: 1px solid var(--grey-morelight-color);
@@ -163,25 +166,25 @@ main .FeaturedWorks .firstpost {
   gap: 18px;
 }
 
-main .FeaturedWorks .firstpost .img {
+.FeaturedWorks .firstpost .img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-main .FeaturedWorks .firstpost .topic {
+.FeaturedWorks .firstpost .topic {
   font-size: 30px;
   font-weight: bold;
 }
 
-main .FeaturedWorks .firstpost .medium {
+.FeaturedWorks .firstpost .medium {
   display: flex;
   align-items: center;
   gap: 26px;
   margin-top: 18px;
 }
 
-main .FeaturedWorks .firstpost .year {
+.FeaturedWorks .firstpost .year {
   background-color: var(--vavy-color);
   color: #ffffff;
   font-size: 18px;
@@ -190,17 +193,17 @@ main .FeaturedWorks .firstpost .year {
   font-weight: 900;
 }
 
-main .FeaturedWorks .firstpost .style {
+.FeaturedWorks .firstpost .style {
   font-size: 20px;
   color: var(--grey-light-color);
 }
 
-main .FeaturedWorks .firstpost .details {
+.FeaturedWorks .firstpost .details {
   font-size: 16px;
   margin-top: 18px;
 }
 
-main .FeaturedWorks .mediumpost {
+.FeaturedWorks .mediumpost {
   margin-top: 16px;
   display: flex;
   border-bottom: 1px solid var(--grey-morelight-color);
@@ -208,25 +211,25 @@ main .FeaturedWorks .mediumpost {
   gap: 18px;
 }
 
-main .FeaturedWorks .mediumpost .img {
+.FeaturedWorks .mediumpost .img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-main .FeaturedWorks .mediumpost .topic {
+.FeaturedWorks .mediumpost .topic {
   font-size: 30px;
   font-weight: bold;
 }
 
-main .FeaturedWorks .mediumpost .medium {
+.FeaturedWorks .mediumpost .medium {
   display: flex;
   margin-top: 18px;
   align-items: center;
   gap: 26px;
 }
 
-main .FeaturedWorks .mediumpost .year {
+.FeaturedWorks .mediumpost .year {
   background-color: var(--vavy-color);
   color: #ffffff;
   font-size: 18px;
@@ -235,17 +238,17 @@ main .FeaturedWorks .mediumpost .year {
   font-weight: 900;
 }
 
-main .FeaturedWorks .mediumpost .style {
+.FeaturedWorks .mediumpost .style {
   font-size: 20px;
   color: var(--grey-light-color);
 }
 
-main .FeaturedWorks .mediumpost .details {
+.FeaturedWorks .mediumpost .details {
   margin-top: 18px;
   font-size: 16px;
 }
 
-main .FeaturedWorks .lastpost {
+.FeaturedWorks .lastpost {
   margin-top: 16px;
   display: flex;
   border-bottom: 1px solid var(--grey-morelight-color);
@@ -253,25 +256,25 @@ main .FeaturedWorks .lastpost {
   gap: 18px;
 }
 
-main .FeaturedWorks .lastpost .img {
+.FeaturedWorks .lastpost .img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-main .FeaturedWorks .lastpost .topic {
+.FeaturedWorks .lastpost .topic {
   font-size: 30px;
   font-weight: bold;
 }
 
-main .FeaturedWorks .lastpost .medium {
+.FeaturedWorks .lastpost .medium {
   display: flex;
   margin-top: 18px;
   align-items: center;
   gap: 26px;
 }
 
-main .FeaturedWorks .lastpost .year {
+.FeaturedWorks .lastpost .year {
   background-color: var(--vavy-color);
   color: #ffffff;
   font-size: 18px;
@@ -280,12 +283,12 @@ main .FeaturedWorks .lastpost .year {
   font-weight: 900;
 }
 
-main .FeaturedWorks .lastpost .style {
+.FeaturedWorks .lastpost .style {
   font-size: 20px;
   color: var(--grey-light-color);
 }
 
-main .FeaturedWorks .lastpost .details {
+.FeaturedWorks .lastpost .details {
   margin-top: 18px;
   font-size: 16px;
 }
@@ -330,6 +333,7 @@ footer .copyright {
 
   nav {
     flex-direction: column;
+    gap: 40px;
   }
 
   nav .part1 {
@@ -339,21 +343,16 @@ footer .copyright {
   nav .part2 {
     order: 1;
     margin-top: 30px;
-  }
-
-  nav .Profile {
-    display: flex;
-    justify-content: center;
+    padding: 0 80px 10px 80px;
   }
 
   nav .part1 .Introduce {
     text-align: center;
-    margin-top: 32px;
   }
 
   nav .part1 .Describe {
     text-align: center;
-    margin-top: 21px;
+    margin-top: 20px;
   }
 
   nav .part1 {
@@ -379,46 +378,46 @@ footer .copyright {
     margin: 0 auto;
   }
 
-  main .RecentPosts .postbox {
+  .RecentPosts .postbox {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
-  main .RecentPosts .postleft {
+  .RecentPosts .postleft {
     padding: 18px;
     margin: 0 10px;
   }
 
-  main .RecentPosts .postright {
+  .RecentPosts .postright {
     padding: 18px;
     margin: 0 10px;
     margin-top: 16px;
     margin-bottom: 20px;
   }
 
-  main .FeaturedWorks .mediumpost {
+  .FeaturedWorks .mediumpost {
     display: none;
   }
 
-  main .FeaturedWorks .lastpost {
+  .FeaturedWorks .lastpost {
     display: none;
   }
 
-  main .FeaturedWorks .firstpost {
+  .FeaturedWorks .firstpost {
     flex-direction: column;
     margin-top: 0;
   }
 
-  main .FeaturedWorks .top {
+  .FeaturedWorks .top {
     text-align: center;
   }
 
-  main .FeaturedWorks .firstpost .img {
+  .FeaturedWorks .firstpost .img {
     text-align: center;
   }
 
-  main .FeaturedWorks .firstpost img {
+  .FeaturedWorks .firstpost img {
     top: 0;
     left: 0;
     width: 100%;
