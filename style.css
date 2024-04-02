@@ -16,8 +16,9 @@
 }
 
 .content {
-  width: 857px;
+  max-width: 857px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 /* Header */
@@ -25,10 +26,11 @@ header .menu {
   display: flex;
   justify-content: flex-end;
   gap: 20px;
+  padding: 30px 0 80px 0;
 }
 
-header .menu div {
-  margin-top: 27px;
+header .menu .icon {
+  display: none;
 }
 
 /* Nav */
@@ -36,7 +38,7 @@ nav {
   display: flex;
   color: var(--vavy-color);
   justify-content: space-between;
-  padding: 140px 0 71px 0;
+  gap: 80px;
 }
 
 nav .part1 .Introduce {
@@ -48,18 +50,14 @@ nav .part1 .Introduce {
 nav .part1 .Describe {
   font-size: 16px;
   margin-top: 40px;
-  margin-right: 116px;
 }
 
 nav .part1 .Download {
   font-size: 20px;
   background-color: var(--red-color);
-  height: 47px;
-  width: 208px;
   margin-top: 38px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: inline-block;
+  padding: 13px;
 }
 
 nav .part1 .Download a {
@@ -67,37 +65,32 @@ nav .part1 .Download a {
   color: #ffffff;
 }
 
+nav .part2 .Profile {
+  width: 100%;
+  height: 100%;
+}
+
 nav .part2 img {
+  border-radius: 50%;
   width: 243px;
   height: 243px;
-  border-radius: 50%;
-  margin: 0px;
 }
 
 /* Main */
-main {
-  display: block;
-  min-width: 857px;
-}
-
 main .RecentPosts {
   background-color: var(--mint-color);
-  height: 396px;
-  display: flex;
   color: var(--vavy-color);
-  width: 100%;
 }
 
 main .RecentPosts .top {
   display: flex;
-  height: 60px;
   justify-content: space-between;
   align-items: center;
+  padding: 15px 0;
 }
 
 main .RecentPosts .top .theme {
   font-size: 22px;
-  width: 219px;
 }
 
 main .RecentPosts .top .view {
@@ -107,16 +100,14 @@ main .RecentPosts .top .view {
 
 main .RecentPosts .postbox {
   display: flex;
-  width: 857px;
+  gap: 20px;
+  padding-bottom: 20px;
 }
 
 main .RecentPosts .postleft {
   background-color: #ffffff;
-  width: 418px;
-  height: 265px;
-  padding: 24px;
   border-radius: 4px;
-  margin-left: 0;
+  padding: 24px;
 }
 
 main .RecentPosts .postleft .topic {
@@ -130,18 +121,14 @@ main .RecentPosts .postleft .medium {
   margin-top: 30px;
 }
 
-main .RecentPosts .postleft .content {
-  width: 368px;
+main .RecentPosts .postleft .details {
   margin-top: 30px;
 }
 
 main .RecentPosts .postright {
   background-color: #ffffff;
-  width: 418px;
-  height: 265px;
   padding: 24px;
   border-radius: 4px;
-  margin-left: 20px;
 }
 
 main .RecentPosts .postright .topic {
@@ -155,182 +142,157 @@ main .RecentPosts .postright .medium {
   margin-top: 30px;
 }
 
-main .RecentPosts .postright .content {
-  width: 368px;
+main .RecentPosts .postright .details {
   margin-top: 30px;
 }
 
-section .FeaturedWorks {
-  margin-top: 15px;
-  font-size: 22px;
-  margin-left: 0;
+main .FeaturedWorks {
   color: var(--vavy-color);
 }
 
-section .FeaturedWorks .firstpost {
-  margin-top: 15px;
-  display: flex;
-  border-style: none none solid none;
-  border-color: var(--grey-morelight-color);
-  padding-bottom: 15px;
+main .FeaturedWorks .top {
+  font-size: 22px;
+  padding: 20px 0;
 }
 
-section .FeaturedWorks .firstpost img {
+main .FeaturedWorks .firstpost {
+  margin-top: 16px;
+  display: flex;
+  border-bottom: 1px solid var(--grey-morelight-color);
+  padding-bottom: 16px;
+  gap: 18px;
+}
+
+main .FeaturedWorks .firstpost .img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-section .FeaturedWorks .firstpost .article {
-  margin-left: 18px;
-}
-
-section .FeaturedWorks .firstpost .topic {
+main .FeaturedWorks .firstpost .topic {
   font-size: 30px;
   font-weight: bold;
 }
 
-section .FeaturedWorks .firstpost .medium {
+main .FeaturedWorks .firstpost .medium {
   display: flex;
-  margin-top: 30px;
+  align-items: center;
+  gap: 26px;
+  margin-top: 18px;
 }
 
-section .FeaturedWorks .firstpost .year {
+main .FeaturedWorks .firstpost .year {
   background-color: var(--vavy-color);
   color: #ffffff;
   font-size: 18px;
-  width: 62px;
-  height: 25px;
   border-radius: 16px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 6px 10px;
   font-weight: 900;
 }
 
-section .FeaturedWorks .firstpost .style {
-  margin-left: 26px;
+main .FeaturedWorks .firstpost .style {
   font-size: 20px;
   color: var(--grey-light-color);
 }
 
-section .FeaturedWorks .firstpost .details {
-  margin-top: 30px;
+main .FeaturedWorks .firstpost .details {
   font-size: 16px;
-  width: 594px;
+  margin-top: 18px;
 }
 
-section .FeaturedWorks .mediumpost {
+main .FeaturedWorks .mediumpost {
+  margin-top: 16px;
   display: flex;
-  margin-top: 30px;
-  border-style: none none solid none;
-  border-color: var(--grey-morelight-color);
-  padding-bottom: 15px;
+  border-bottom: 1px solid var(--grey-morelight-color);
+  padding-bottom: 16px;
+  gap: 18px;
 }
 
-section .FeaturedWorks .mediumpost img {
+main .FeaturedWorks .mediumpost .img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-section .FeaturedWorks .mediumpost .article {
-  margin-left: 18px;
-  align-items: center;
-}
-
-section .FeaturedWorks .mediumpost .topic {
+main .FeaturedWorks .mediumpost .topic {
   font-size: 30px;
   font-weight: bold;
 }
 
-section .FeaturedWorks .mediumpost .medium {
+main .FeaturedWorks .mediumpost .medium {
   display: flex;
-  margin-top: 30px;
+  margin-top: 18px;
+  align-items: center;
+  gap: 26px;
 }
 
-section .FeaturedWorks .mediumpost .year {
+main .FeaturedWorks .mediumpost .year {
   background-color: var(--vavy-color);
   color: #ffffff;
   font-size: 18px;
-  width: 62px;
-  height: 25px;
   border-radius: 16px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 6px 10px;
   font-weight: 900;
 }
 
-section .FeaturedWorks .mediumpost .style {
-  margin-left: 26px;
+main .FeaturedWorks .mediumpost .style {
   font-size: 20px;
   color: var(--grey-light-color);
 }
 
-section .FeaturedWorks .mediumpost .details {
-  margin-top: 30px;
+main .FeaturedWorks .mediumpost .details {
+  margin-top: 18px;
   font-size: 16px;
-  width: 594px;
 }
 
-section .FeaturedWorks .lastpost {
+main .FeaturedWorks .lastpost {
+  margin-top: 16px;
   display: flex;
-  margin-top: 30px;
-  border-style: none none solid none;
-  border-color: var(--grey-morelight-color);
-  padding-bottom: 15px;
+  border-bottom: 1px solid var(--grey-morelight-color);
+  padding-bottom: 16px;
+  gap: 18px;
 }
 
-section .FeaturedWorks .lastpost img {
+main .FeaturedWorks .lastpost .img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-section .FeaturedWorks .lastpost .article {
-  margin-left: 18px;
-  align-items: center;
-}
-
-section .FeaturedWorks .lastpost .topic {
+main .FeaturedWorks .lastpost .topic {
   font-size: 30px;
   font-weight: bold;
 }
 
-section .FeaturedWorks .lastpost .medium {
+main .FeaturedWorks .lastpost .medium {
   display: flex;
-  margin-top: 30px;
+  margin-top: 18px;
+  align-items: center;
+  gap: 26px;
 }
 
-section .FeaturedWorks .lastpost .year {
+main .FeaturedWorks .lastpost .year {
   background-color: var(--vavy-color);
   color: #ffffff;
   font-size: 18px;
-  width: 62px;
-  height: 25px;
   border-radius: 16px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 6px 10px;
   font-weight: 900;
 }
 
-section .FeaturedWorks .lastpost .style {
-  margin-left: 26px;
+main .FeaturedWorks .lastpost .style {
   font-size: 20px;
   color: var(--grey-light-color);
 }
 
-section .FeaturedWorks .lastpost .details {
-  margin-top: 30px;
+main .FeaturedWorks .lastpost .details {
+  margin-top: 18px;
   font-size: 16px;
-  width: 594px;
 }
 
 /* Footer */
 footer {
-  margin-top: 83px;
+  margin-top: 84px;
   margin-bottom: 54px;
 }
 
@@ -348,9 +310,22 @@ footer .copyright {
   justify-content: center;
 }
 
+@media screen and (min-width: 481px) {
+  header .icon {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 480px) {
   header .menu {
     display: none;
+  }
+
+  header .icon {
+    display: flex;
+    justify-content: right;
+    font-size: 40px;
+    padding: 20px 0;
   }
 
   nav {
@@ -363,6 +338,7 @@ footer .copyright {
 
   nav .part2 {
     order: 1;
+    margin-top: 30px;
   }
 
   nav .Profile {
@@ -377,7 +353,6 @@ footer .copyright {
 
   nav .part1 .Describe {
     text-align: center;
-    margin: 0 20%;
     margin-top: 21px;
   }
 
@@ -389,7 +364,11 @@ footer .copyright {
 
   nav .part1 .Download {
     margin: 0 auto;
-    margin-top: 27px;
+    margin-top: 26px;
+  }
+
+  .RecentPosts {
+    margin-top: 60px;
   }
 
   .RecentPosts .view {
@@ -398,11 +377,6 @@ footer .copyright {
 
   .RecentPosts .theme {
     margin: 0 auto;
-    text-align: center;
-  }
-
-  main .RecentPosts {
-    height: 647px;
   }
 
   main .RecentPosts .postbox {
@@ -412,68 +386,42 @@ footer .copyright {
   }
 
   main .RecentPosts .postleft {
-    padding: 0;
-    width: 80%;
-  }
-
-  main .RecentPosts .postleft .topic {
-    text-align: center;
-    margin-top: 50px;
-  }
-
-  main .RecentPosts .postleft .medium {
-    display: flex;
-    justify-content: center;
-  }
-
-  main .RecentPosts .postleft .content {
-    width: 100%;
-    text-align: center;
-    padding: 20px;
+    padding: 18px;
+    margin: 0 10px;
   }
 
   main .RecentPosts .postright {
-    padding: 0;
-    width: 80%;
-    margin: 0;
-    margin-top: 17px;
+    padding: 18px;
+    margin: 0 10px;
+    margin-top: 16px;
+    margin-bottom: 20px;
   }
 
-  main .RecentPosts .postright .topic {
-    text-align: center;
-    margin-top: 50px;
-  }
-
-  main .RecentPosts .postright .medium {
-    display: flex;
-    justify-content: center;
-  }
-
-  main .RecentPosts .postright .content {
-    width: 100%;
-    text-align: center;
-    padding: 20px;
-  }
-
-  section .FeaturedWorks .mediumpost {
+  main .FeaturedWorks .mediumpost {
     display: none;
   }
 
-  section .FeaturedWorks .lastpost {
+  main .FeaturedWorks .lastpost {
     display: none;
   }
 
-  section .FeaturedWorks .firstpost {
+  main .FeaturedWorks .firstpost {
     flex-direction: column;
-    padding: 20px;
+    margin-top: 0;
   }
 
-  section .FeaturedWorks .top {
+  main .FeaturedWorks .top {
     text-align: center;
-    padding: 20px 20px 0 20px;
   }
 
-  section .FeaturedWorks .firstpost .img {
-    padding: 0 20px;
+  main .FeaturedWorks .firstpost .img {
+    text-align: center;
+  }
+
+  main .FeaturedWorks .firstpost img {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 }
